@@ -2,7 +2,7 @@ use std::thread;
 use std::time::Duration;
 use std::sync::mpsc;
 
-pub fn threader() {
+pub fn spawn_threads() {
     let (tx, rx) = mpsc::channel();
 
     let tx2 = tx.clone();
